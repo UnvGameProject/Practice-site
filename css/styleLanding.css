@@ -1,0 +1,142 @@
+/* Author: Brandon Minter
+    Date: 12/11/2022
+    Assignent: E-Commerce Website Project 
+    Description: This should only be used for css elements related to style and NOT layout
+*/
+
+/* Color Pallette chosen (in hex)is: D.terq #388087(panels), M.terq #6FB3B8(Headings),
+ L.blue #BADFE7(text or buttons*) L.green #C2EDCE(widget panels/accents)
+L.tan #F6F6F2(background) */
+
+/* Frame */
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+:root {
+    background-color: #F6F6F2;
+    --title-span-color: rgb(24, 78, 129);
+    --text-color: rgba(7, 26, 44, 1);
+    --nav-link-color: rgba(233, 242, 251, 1);
+    --nav-link-hover-color: rgb(190, 217, 243);
+    --span-color: #6FB3B8;
+}
+
+h1.title {
+    font-weight: bold;
+    font-size: 8vw;
+    font-family: "Montez", "Euphoria Script", Helvetica, sans-serif;
+    color: #388087;
+
+    text-shadow: 4px 4px 3px #000000;
+}
+
+/* Body */
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url("../res/shutterstock_2153553643.svg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+
+/* Footer */
+footer {
+    background-color: #cccccc;
+}
+
+#footer span {
+    color: var(--nav-link-hover-color);
+}
+
+
+
+/* Widgets*/
+
+button#entersite.blue {
+    box-shadow: 2px 2px 6px #000000;
+    border-radius: 5%;
+    font-family:  "Euphoria Script", "Montez", Helvetica, sans-serif;
+    font-size: 2.6vw;
+    font-kerning: auto;
+    color: #C2EDCE;
+    text-shadow: 4px 4px 3px #000000;
+    cursor: pointer;
+}
+
+button#entersite.blue:hover {
+    background-color: #6FB3B8;
+    color: #388087;
+}
+
+.clock {
+    background-color: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+    font-size: 1.8vw;
+    width: 13vw;
+    height: 4.8vw;
+    transform: skew(8deg, -4deg);
+}
+.cover {
+    width: 14vw;
+    height: 6vw;
+    background-color:  #cdeccd;
+    background-image: linear-gradient(rgba(0,0,0,0.44), rgba(0,0,0,0.46));
+    transform: skew(9deg, -6deg);
+    border-radius: 8%;
+}
+
+
+/* Panels */
+.contact span:hover {
+    font-weight: bolder;
+}
+
+.contact h2 {
+    font-size: var(--font-3x-large);
+    width: max-content;
+    font-family: "Montez", sans-serif;
+}
+
+.contact .form input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.contact .form input[type="submit"] {
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact .form input[type="submit"]:hover {
+    background-color: #1a1b1a;
+    --nav-link-color: rgba(233, 242, 251, 1);
+    --nav-link-hover-color: rgb(190, 217, 243);
+}
+
+.blue {
+    background-color: #388087;
+    color: white;
+    border: none;
+    cursor: pointer;
+    --nav-link-color: rgba(233, 242, 251, 1);
+    --nav-link-hover-color: rgb(190, 217, 243);
+    font-family: Helvetica, sans-serif;
+}
+
+/* Misc */
+#contactus {
+    font-size: 2.4vw;
+}
+span a .short-contact form.round-large {
+    font-weight: normal;
+    font-size: 2vw;
+    font-family: "Euphoria Script", "Montez", Helvetica, sans-serif;
+}

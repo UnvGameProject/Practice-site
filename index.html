@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--  Author: Brandon Minter | Date: 12/11/2022 | Assignent: E-Commerce Website Project -->
+<!-- This is the main landing site before you enter the e-commerce mock site-->
+<html lang="en">
+
+<head> 
+    <meta name="viewport" content="width=1200px, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Shop-A-Lot E-Commerce Site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Euphoria+Script">
+    <link rel="stylesheet" href="css/layoutLanding.css">
+    <link rel="stylesheet" href="css/styleLanding.css">
+    <script src="landing.js" defer></script>
+</head>
+
+<body>
+    <div class="flex_container">
+        <h1 class="title">Bake-A-Lot</h1>
+    </div>
+    <div class="flex_main">
+        <div class="Enter-button" >
+            <button class="blue" id="entersite" onclick="location.href='MainPage/main.html'" type="submit">Enter Site</a>
+        </div> <!-- end Enter-button-->
+        <!-- <p>Where shoppers shop</p> -->
+        <div class="cover"></div>
+        <div class="clock" id="currentTime">
+            <div id="time"></div> 
+            <div id="date"></div> 
+         </div>
+
+
+         <footer>
+         <div class="contact container" id="contact">
+            <div class="short-contact">
+                    <h2 id="contactus">Contact us</h2>
+                    <p class="label-xlarge">We at Bake-A-Lot would like to hear from you!</p>
+                    <div class="contact-info">
+                        <i class="fa fa-location-arrow"></i><span style="margin-left:10px;"><a
+                                href="https://www.google.com/maps/place/Florida+State+College+at+Jacksonville:+Kent+Campus/@30.3004866,-81.7216189,17z/data=!3m1!4b1!4m5!3m4!1s0x88e5b84f57273fd3:0x391aede0efd16805!8m2!3d30.300482!4d-81.719044"
+                                target="_blank">FSCJ | Kent Campus<br> 3939 Roosevelt Blvd, Jacksonville, Fl
+                                32205</a></span><br>
+                        <i class="fa fa-envelope-o"></i><span style="margin-left:10px;"><a
+                                href="S3767526@students.fscj.edu">S3767526@students.fscj.edu</a></span><br>
+                        <i class="fa fa-phone"></i><span style="margin-left:10px;"><a href="3059888251">(305)
+                                988-8251</a></span><br>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fa fa-linkedin"></i><span style="margin-left:10px;"><a
+                                href="https://www.linkedin.com/in/brandon-minter-89a374241" target="_blank"
+                                style="text-decoration: none;">-My LinkedIn</a></span><br>
+                        <i class="fa fa-facebook"></i><span style="margin-left:10px;"><a href="fscj.edu" target="_blank"
+                                style="text-decoration: none;"> - E-Portfolio Site</a></span><br>
+                    </div>
+                </div>
+                <div class="spaceee"></div>
+                <div class="form">
+                    <div class="container1">
+                        <form class="round-large">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="name" name="fname" placeholder="Your name">
+        
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="email" name="email" placeholder="Your email">
+        
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+        
+                            <p>By submiting this form, you agree to our <a href="privacy-policy.html" target="_blank">privacy
+                                    policy</a></p><br>
+                            <input class="blue" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- end main-->
+</body>
+</html>

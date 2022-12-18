@@ -1,0 +1,193 @@
+/* Author: Brandon Minter
+    Date: 12/11/2022
+    Assignent: E-Commerce Website Project 
+    Description: This should only be used for css elements related to style and NOT layout
+*/
+
+/* Color Pallette chosen (in hex)is: D.terq #388087(panels), M.terq #6FB3B8(Headings),
+ L.blue #BADFE7(text or buttons*) L.green #C2EDCE(widget panels/accents)
+L.tan #F6F6F2(background) */
+
+/* Master/Root, etc*/
+h1.title {
+    font-weight: bold;
+    font-size: 6vw;
+    font-family: "Montez", "Euphoria Script", Helvetica, sans-serif;
+    color: #388087;
+    text-shadow: 4px 4px 3px #000000;
+}
+
+/* Body */
+body {
+    background-image:  url("../res/19742.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: repeat;
+    background-size:contain;
+}
+
+.main_flex {
+    box-shadow: -3px -5px 20px #000000;
+}
+
+/* Widgets and Indie elements*/
+.nav-button {
+    border: 3px solid #6FB3B8; 
+    background-color: #F6F6F2;
+    box-shadow: 2px 2px 6px #000000;
+    font-size: 2.4vw;
+    font-family:"Montez", "Euphoria Script", Helvetica, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    font-kerning: auto;
+    text-shadow: 1px 0px 0px #000000;
+}
+
+.nav-button:hover {
+    background-color: #6FB3B8;
+    color: #388087;
+    /* transition: all 200ms cubic-bezier(0.19, 1, 0.22, 1); */
+}
+
+#campaign {
+    background-image: url("../res/10-7-2020-18.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    opacity: 0.78;
+    background-size: cover;
+}
+
+.hero1 {
+
+    background-image: url("../res/CHRISTMAS10.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    opacity: 0.78;
+    border-radius: 33%;
+    background-size: cover;
+}
+
+.countdown {
+    font-family: "Euphoria Script", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #e12e0a;
+    background-color: #F6F6F2;
+    border: 3px solid #388087;
+    box-shadow: 2px 2px 6px #000000;
+    text-shadow: 5px 5px 5px #388087;
+    border-radius:23%;
+    width: 18vw;
+    height: fit-content;
+    text-align: center;
+}
+.countdown:hover {
+    font-family: "Euphoria Script", Helvetica, sans-serif;
+    font-style: italic;
+    color: #388087;
+    border: 3px solid #e12e0a;
+    text-shadow: 5px 5px 5px #e12e0a;
+}
+
+.products {
+    border: 3px solid #e12e0a;
+    box-shadow: 3px -3px 6px #000000;
+}
+
+.item {
+    position:relative;
+    display: inline;
+    border: 3px solid #388087;
+    box-shadow: 3px -3px 6px #000000;
+    width: 800vw;
+    max-width: 150px;
+}
+.item:hover {
+    list-style: symbols("+");
+    cursor: pointer;
+    border: 3px solid #e12e0a;
+}
+
+
+.itemlabel {
+    text-shadow: 5px 5px 5px #388087;
+}
+
+.catlabel {
+    font-family: "Montez", "Euphoria Script", Helvetica, sans-serif;
+    font-display: auto;
+    font-style: italic;
+    font-size: 3.4vw;
+    color: #388087;
+    text-shadow: .5px .5px 1.5px #000000;
+}
+
+.products.Cat1, .products.Cat3, .products.Cat5, .products.Cat7 {
+    background-image: url("../res/y2020-12-02-06_generated.jpg");
+    background-color: #F6F6F2;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: inherit;
+    opacity: 0.8;
+    background-size: cover;
+}
+.products.Cat2, .products.Cat4, .products.Cat6   {
+    background-image: url("../res/vecteezy_seamless-vector-pattern-with-black-christmas-toys_13728692.jpg");
+    background-color: #F6F6F2;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    width: inherit;
+    opacity: 0.8;
+}
+
+/* Pop-up stuff */
+#page-mask {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    cursor: pointer;
+    background-color: white;
+}
+
+.popup-overlay,
+.popup-overlay1 {
+    /*Hides pop-up when there is no "active" class*/
+    visibility: hidden;
+
+}
+
+.popup-overlay.active,
+.popup-overlay1.active {
+    /*displays pop-up when "active" class is present*/
+    visibility: visible;
+}
+
+.popup-content,
+.popup-content1 {
+    background-color: white;
+    border: 3px solid #666666;
+    box-shadow: 0 0 6px #000000;
+}
+
+/* Footer */
+span {
+    font-size: 2vw;
+    color: #000000;
+    font-family: Helvetica, sans-serif;;
+}
+
+.legal {
+    text-justify: left;
+    font-size: 1.4vw;;
+}
+
+.links {
+    -webkit-column-count: 2;
+    column-count: 2;
+}

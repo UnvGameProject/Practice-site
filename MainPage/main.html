@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--  Author: Brandon Minter | Date: 12/11/2022 | Assignent: E-Commerce Website Project -->
+<!-- This is the main landing site before you enter the e-commerce mock site-->
+<html lang="en">
+
+<head> 
+    <meta name="viewport" content="width=1200px, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Shop-A-Lot E-Commerce Site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Euphoria+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/layoutMain.css">
+    <link rel="stylesheet" href="../css/styleMain.css">
+    <script src="main.js"></script>
+    
+    <script src="../Activity/products.js"></script>
+    <script src="../Activity/productController.js" defer></script>
+
+</head>
+
+<body>
+    <div class="flex_container">
+        <a href="../index.html">
+        <h1 class="title">Bake-A-Lot<span>™</span></h1>
+        </a>
+    </div>
+    <div class="countdown">
+        <p class="campaign"><span>Hurry, Sale ends In...<br></span></p>
+        <p id="days"></p>
+        <p>Days</p>
+        <p id="hours"></p>
+        <p>Hours</p>
+        <p id="mins"></p>
+        <p>Mins</p>
+        <p id="secs"></p>
+        <p>Secs</p>
+    </div>
+    
+
+    <div class="hero" id="campaign">
+        <!-- <img src="../res/CHRISTMAS10.jpg" width="480px"></img> -->
+    </div>
+    <div class="nav_flex">
+        <div class="nav">
+            <button class="nav-button" id="home" onclick="location.href='main.html'" type="submit">Home</button>
+            <button class="nav-button" id="login" onclick="location.href='Login/main.html'" type="submit">Login</button>
+            <button class="nav-button" id="search" onclick="location.href='Activity/search.html'" type="submit">Search</button>
+            <button class="nav-button" id="search" onclick="location.href='Activity/cart.html'" type="submit">Cart</button>
+            <button class="nav-button" id="search" onclick="location.href='Activity/about.html'" type="submit">About</button>
+            <button class="nav-button" id="contact" onclick="location.href='Activity/contact.html'" type="submit">Contact Us</button>
+        </div>
+
+        <div class="hero1" id="christmasbanner">
+        </div>
+
+        <div class="main_flex">
+            <div class="spaceee"></div>
+            <div class="products Cat1" id="Cat1">
+                <label class="catlabel">Cakes</label>
+                    <img class="item" src="../res/products/news/gurcake.jpg" width='inherit' height='inherit'>
+                <p></p>
+            </div>
+            <div class="products Cat2" id="Cat2">
+                <label class="catlabel">Cookies</label>
+                <p></p>
+            </div>
+            <div class="products Cat3" id="Cat3">
+                <label class="catlabel">Pastries</label>
+                <p></p>
+            </div>
+            <div class="products Cat4" id="Cat4">
+                <label class="catlabel">Scrumdiddlyumtious</label>
+                <p></p>
+            </div>
+            <div class="products Cat5" id="Cat5">
+                <label class="catlabel">Tarts</label>
+                <p></p>
+            </div>
+            <div class="products Cat6" id="Cat6">
+                <label class="catlabel">International</label>
+                <p></p>
+            </div>
+            <div class="products Cat7" id="Cat7">
+                <label class="catlabel">New Creations</label>
+                <p></p>
+            </div>
+        </div>
+        <div class="legal">
+            <label for="Trademark">Ⓒ Bake-A-Lot™</label>
+            <p id="trademark"></p>
+            <label for="Copyright">2022-2025 Novem Inc.</label>
+            <p id="Copyright">All rights reserved | </p>
+            <a href="Legal/TCs" target="_blank">Terms & Conditions</a>
+            <a href="Legal/Privacy" target="_blank">Privacy Policy</a>
+            <a href="Legal/Pref" target="_blank">Cookies Preferences</a>
+        </div>
+    </div>
+    
+    </div>
+</body>
